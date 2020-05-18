@@ -43,13 +43,21 @@ due to wind and weather conditions on the stretch between London Old Oak Common 
 Birmingham Interchange. Take into account the variability in stop times, i.e. minor delays due
 to passenger movements.
 
+
 London Euston
+ 
  5 min
+
 London Old Oak Common
+ 
  31 min
+
 Birmingham Interchange
+ 
  9 min
+
 Birmingham Curzon Street
+
 The distance between London Old Oak Common Station and Birmingham Interchange Station
 is 145km. This could be broken down in up-to 14 blocks. If there are less but longer blocks the
 trains could achieve in theory a higher average speed, however the throughput in trains per hours is smaller.
@@ -60,19 +68,24 @@ given train schedule (numbers of trains per hour n ∈ {1, 2, 3, 4, 5, 6, 8, 10,
 given break-down of the line in signalling blocks k ∈ {1, ..., 15} a distribution of average
 overall travelling time. The simulation results are fed into an optimisation problem to
 determine (nopt, kopt) to achieve an optimal results.
+
+
 Using the simulation described above solve the following optimisation problems:
-(1)Minimise the overall average traveling time.
+
+### (1)Minimise the overall average traveling time.
+
 The overall traveling time consist of the waiting time for the next train and the
 actual traveling time until arrival of the train. The problem can be simplified by
 assuming a fixed average waiting time (0.5*60/n).
-(2)Maximise the throughput of passengers in peak hours.
+
+### (2)Maximise the throughput of passengers in peak hours.
+
 The trains can be configured to run at a length of 200m (short train, 420 passengers)
 or 300m (max train, 630 passengers). While longer trains carry potentially more
 passengers, you need to consider the walking times at the train station. The walking
 speed of a train passenger carrying luggage is between 1.0 and 1.2m/s, which
 impacts on the stop times at the station. Also more passengers disembarking and
-embarking may lengthen the stop times.
-For a more realistic simulation assume a Poisson-Distribution for passengers arriving
+embarking may lengthen the stop times. For a more realistic simulation assume a Poisson-Distribution for passengers arriving
 at the train station at an average rate of m passengers per hour and how they can
 be served by n trains per hour. As the trains are on a tight schedule, we cannot
 assume that everyone gets on board during the short stopping time. Assume that
