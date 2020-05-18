@@ -1,5 +1,5 @@
 # Simulation-and-Optimization-of-HS2-line-from-London-to-Birmingham
-Simulation and optimisation of  London HS2 using simpy 
+Simulation and optimisation of London HS2 using simpy is been implemented using the below description. Please find the notebook and email me on ninadmn@gmail.com for any suggestions. 
 
 
 ## The Context
